@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Index from "./routes/index";
-import {action as destroyAction} from "./routes/destroy";
+import {action as destroyAction} from "./routes/destroy.jsx";
 
 import './index.css'
 import EditContact, {
   action as editAction,
-} from "./routes/edit";
+} from "./routes/edit.jsx";
 
 import {
   createBrowserRouter,
@@ -16,13 +16,13 @@ import {
 import Root, {
   loader as rootLoader,
   action as rootAction
-} from "./routes/Root";
+} from "./routes/root.jsx";
 
 import ErrorPage from "./ErrorPage";
 import Contact, {
   loader as contactLoader,
   action as contactAction,
-} from "./routes/Contacts";
+} from "./routes/contacts.jsx";
 
 
 const router = createBrowserRouter([
